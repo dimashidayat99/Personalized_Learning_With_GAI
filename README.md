@@ -28,7 +28,7 @@ Based on the formulated research questions, the study aims to:
 
 Overall Idea, this study will implement a quantitative experimental approach to its research design where the proposed system is only limited for computational study while empirical study is not being conducted in this study due to time constraint. The research begins with literature review to fully achieve the objective one which to identify current approach of generative model in learning path recommendation system by reviewing related research paper of educational recommendation system and generative AI. Based on the literature review, the chosen generative model is GAN due to the model offer high performance in the recommendation system. GAN is a deep learning model which can be customized to obtained the objective. Therefore, this study used four different variant of GAN to compared which one is the best model. There are four variant of the GAN model which are conventional GAN (denoted as GAN only), Multiple Generative Adversarial Networks (Multi-GAN), Multiple Discriminator Generative Adversarial Network (MDGAN) and Multiple Multiple Discriminators Generative Adversarial Networks (Multi-MDGAN). 
 
-The objective two will be achieved when modelling part is completed which require to model four GAN variants. To obtain objective three, the generative model will be evaluated by using four performance metrics namely mean average precision, hit ratio, mean reciprocal rank and normalized discounted cumulative gain. Finally, the model will be compared with conventional recommendation system such collaborative filtering and content based recommendation system. The both baselines is chosen due to simplicity. The other approach will not being used as the baseline because of the complexity and time constraint.
+The objective two will be achieved when modelling part is completed which require to model four GAN variants. To obtain objective three, the generative model will be evaluated by using four performance metrics namely mean average precision, hit ratio, mean reciprocal rank and normalized discounted cumulative gain. Finally, the model will be compared with conventional recommendation system such Collaborative Filtering (CF) and Content Based (CB) recommendation system. The both baselines is chosen due to simplicity. The other approach will not being used as the baseline because of the complexity and time constraint.
 
 ## Data Gathering
 
@@ -36,12 +36,31 @@ The chosen dataset of this study is [MOOCCube](http://moocdata.cn/data/MOOCCube)
 
 ## Preprocessing & Modelling
 
+The MOOCCube dataset come with sub data which later different model was used different data depending on the architecture of the models. Due to different data was used and different architecture of the models, the data preparation process is also different for each models. However, all the data will make sure undergo data cleaning process and data understanding process to improved the decision making ability.
+
 ### GAN
 
-GAN is a type of neural network used for generative modeling. It consists of two networks: a generator and a discriminator. The generator creates new data samples, while the discriminator tries to distinguish between real and generated samples. They are trained together in an adversarial manner, where the generator tries to fool the discriminator and the discriminator tries to become better at distinguishing real from fake. This competition leads to the generator learning to create increasingly realistic samples, making GANs useful for the main task in this project . A detail explanation of the GAN framework as well as the source code can be found in the `` [directory]()
+GAN is a type of neural network used for generative modeling. It consists of two networks: a generator and a discriminator. The generator creates new data samples, while the discriminator tries to distinguish between real and generated samples. They are trained together in an adversarial manner, where the generator tries to fool the discriminator and the discriminator tries to become better at distinguishing real from fake. This competition leads to the generator learning to create increasingly realistic samples, making GANs useful for the main task in this project which is course recommendation. A detail explanation of the GAN framework as well as the source code can be found in the `` [directory]().
+
 ### Multi-GAN
+
+Similar with GAN, Multi-GAN use same principle as GAN. However, Multi-GAN use multiple GAN model to predict the top k course. The number of GAN model used is similar with the number of recommendation (k). In this project, all the recommendation is based of five recommendation which means five model of GAN was used to recommend five courses. Multi-GANs are a powerful extension of the GAN framework, allowing for more nuanced and diverse generation of data by leveraging the strengths of multiple generative models working together. A detail explanation of the Multi-GAN framework as well as the source code can be found in the `` [directory]().
+
 ### MDGAN
+
+MDGAN is a variation of the traditional GAN architecture that employs multiple discriminators. The main idea behind MDGAN is to improve the stability and quality of generated samples by using multiple discriminators to provide feedback to the generator. In MDGAN, there are multiple discriminators, each focusing on a different aspect or feature of the generated samples. In this case, three discriminators were used. Discriminator one will focus on the course sequence, discriminator two will focus on school sequence and discriminator three will focus on teacher sequence. Using multiple discriminators can help the generator learn more effectively by receiving feedback from different perspectives. MDGANs are often more stable during training compared to traditional GANs, as the generator is trained to fool multiple discriminators simultaneously. A detail explanation of the MDGAN framework as well as the source code can be found in the `` [directory]().
+
 ### Multi-MDGAN
+
+Similar with MDGAN, Multi-MDGAN use same principle as MDGAN. However, Multi-MDGAN use multiple MDGAN model to predict the top k course. The number of MDGAN model used is similar with the number of recommendation (k). In this project, all the recommendation is based of five recommendation which means five model of MDGAN was used to recommend five courses. Multi-MDGANs extend the idea of using multiple discriminators in a GAN setup to multiple MDGANs, allowing for more complex and nuanced generation of data by leveraging the strengths of multiple generative models working together. A detail explanation of the Multi-MDGAN framework as well as the source code can be found in the `` [directory]().
+
+### CF
+
+CF is a technique used in recommendation systems to predict a user's preferences for items based on the preferences of other users. The basic idea behind collaborative filtering is that if two users have similar preferences for a set of items, they are likely to have similar preferences for other items as well. A detail explanation of the CF framework as well as the source code can be found in the `` [directory]().
+
+### CB
+
+CB recommendation is a technique used in recommendation systems to recommend items to users based on the features or characteristics of the items and the preferences of the users. Unlike collaborative filtering, which relies on the preferences of other users, content-based recommendation focuses on the attributes of the items themselves. A detail explanation of the CB framework as well as the source code can be found in the `` [directory]().
 
 # Results & Evaluation
 

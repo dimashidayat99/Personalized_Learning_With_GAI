@@ -62,21 +62,29 @@ CF is a technique used in recommendation systems to predict a user's preferences
 
 CB recommendation is a technique used in recommendation systems to recommend items to users based on the features or characteristics of the items and the preferences of the users. Unlike collaborative filtering, which relies on the preferences of other users, content-based recommendation focuses on the attributes of the items themselves. A detail explanation of the CB framework as well as the source code can be found in the `` [directory]().
 
-# Results & Evaluation
+# Evaluation
 
-## Evaluation - Actualness
+The evaluation is a process to determine how well the model predicts the final course sequence compared to the actual final course sequence from the data. However, the evaluation can be biased when the data quality is low. For example, people may take different subjects which are not related to each other causing the course sequence to become very random. Hence, reducing the model's ability to predict the final course sequence. There are four evaluation metrics used in this study which are Mean Average Precision (MAP), Hit Ratio (HR), Mean Reciprocal Rank (MRR) and Normalized Discounted Cumulative Gain (NDCG). However, the output of the recommendation model is in the form of top five recommendation. Therefore, all the mentioned metrics will become MAP@5, HR@5, MRR@5 and NDGC@5. Using these metrics, it provide valuable insight into system functionality and its impact on learners. By examining these metrics, it will give better understanding of the system’s ability to meet individual needs and improve each user’s learning experience.
+
 ### Mean Average Precision (MAP)
+
+MAP is a metric thatt evaluates the quality of the recommendations. It measures both the relevance of the suggested courses and how well the system ranks these courses, particularly placing the most relevant courses higher on the list. It’s particularly useful when the order of recommendations is important.
+
 ### Hit Ratio (HR) 
+
+HR is used to evaluate the accuracy of the recommendations. Its measure correct course prediction based on the actual data. The "hit" is defined as the actual course is in the top five recommended courses while the ranking of the recommendations are ignored. It’s a simple metric that indicates the percentage of hits in the recommendation list.
+
 ### Mean Reciprocal Rank (MRR)
+
+MRR is a metric used to evaluate the effectiveness of a recommendation system, particularly in terms of ranking quality. It focuses on the position of the first relevant item in the ranked list of recommendations provided to the user. It’s useful when the position of the first correct recommendation is more important than the overall order or the presence of other relevant items.
+
 ### Normalized Discounted Cumulative Gain (NDCG)
+
+NDCG is used to evaluate the ranking quality of the recommendations. It takes into account not only the relevance of each recommended item but also the order in which they are presented, with more weight given to items at the top of the list. It’s a more comprehensive metric that considers both the relevance and the rank of each item.
+
+
 ### Overall
 
-## Evaluation - Relevancy
-### Mean Average Precision (MAP)
-### Hit Ratio (HR) 
-### Mean Reciprocal Rank (MRR)
-### Normalized Discounted Cumulative Gain (NDCG)
-### Overall
 
 # Data Product
 

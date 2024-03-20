@@ -20,3 +20,49 @@ Based on the formulated research questions, the study aims to:
 1. To identify the current approach of generative model in the educational recommendation system.
 2. To develop educational recommendation system by implementing generative model.
 3. To evaluate the performance of generative model in the educational recommendation system.
+
+# Methodology
+## Research Design
+
+![]()
+
+Overall Idea, this study will implement a quantitative experimental approach to its research design where the proposed system is only limited for computational study while empirical study is not being conducted in this study due to time constraint. The research begins with literature review to fully achieve the objective one which to identify current approach of generative model in learning path recommendation system by reviewing related research paper of educational recommendation system and generative AI. Based on the literature review, the chosen generative model is GAN due to the model offer high performance in the recommendation system. GAN is a deep learning model which can be customized to obtained the objective. Therefore, this study used four different variant of GAN to compared which one is the best model. There are four variant of the GAN model which are conventional GAN (denoted as GAN only), Multiple Generative Adversarial Networks (Multi-GAN), Multiple Discriminator Generative Adversarial Network (MDGAN) and Multiple Multiple Discriminators Generative Adversarial Networks (Multi-MDGAN). 
+
+The objective two will be achieved when modelling part is completed which require to model four GAN variants. To obtain objective three, the generative model will be evaluated by using four performance metrics namely mean average precision, hit ratio, mean reciprocal rank and normalized discounted cumulative gain. Finally, the model will be compared with conventional recommendation system such collaborative filtering and content based recommendation system. The both baselines is chosen due to simplicity. The other approach will not being used as the baseline because of the complexity and time constraint.
+
+## Data Gathering
+
+The chosen dataset of this study is [MOOCCube](http://moocdata.cn/data/MOOCCube) dataset which later require some pre-processing such as entities and features selection where the important entities and features will be selected while unnecessary entities and features will be ignored; data cleaning, the mandatory data pre-processing techniques; data sampling, to make the computational cost less expensive; data transformation, transform the data into usable form; data integration where several features and entities will be combined together forming desired input data; data encoding, to transform categorical data into numerical value and data splitting for model training and testing. The dataset and more explanation of the dataset can be found in `` [directory]().
+
+## Preprocessing & Modelling
+
+### GAN
+
+GAN is a type of neural network used for generative modeling. It consists of two networks: a generator and a discriminator. The generator creates new data samples, while the discriminator tries to distinguish between real and generated samples. They are trained together in an adversarial manner, where the generator tries to fool the discriminator and the discriminator tries to become better at distinguishing real from fake. This competition leads to the generator learning to create increasingly realistic samples, making GANs useful for the main task in this project . A detail explanation of the GAN framework as well as the source code can be found in the `` [directory]()
+### Multi-GAN
+### MDGAN
+### Multi-MDGAN
+
+# Results & Evaluation
+
+## Evaluation - Actualness
+### Mean Average Precision (MAP)
+### Hit Ratio (HR) 
+### Mean Reciprocal Rank (MRR)
+### Normalized Discounted Cumulative Gain (NDCG)
+### Overall
+
+## Evaluation - Relevancy
+### Mean Average Precision (MAP)
+### Hit Ratio (HR) 
+### Mean Reciprocal Rank (MRR)
+### Normalized Discounted Cumulative Gain (NDCG)
+### Overall
+
+# Data Product
+
+# Conclusion
+## Contributions
+## Limitations
+## Future Works
+

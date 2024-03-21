@@ -74,15 +74,15 @@ HR is used to evaluate the accuracy of the recommendations. Its measure correct 
 
 ### Mean Reciprocal Rank (MRR)
 
-MRR is a metric used to evaluate the effectiveness of a recommendation system, particularly in terms of ranking quality. It focuses on the position of the first relevant item in the ranked list of recommendations provided to the user. It’s useful when the position of the first correct recommendation is more important than the overall order or the presence of other relevant items.
+MRR is a metric used to evaluate the effectiveness of a recommendation system, particularly in terms of ranking quality. It focuses on the position of the first relevant item in the ranked list of recommendations provided to the user. It’s useful when the position of the first correct recommendation is more important than the overall order or the presence of other relevant items. Similar with MAP@5 and HR@5 metrics, the GAN achieve highest MRR@5 value compared to other models with the MRR@5 value of 0.083519 while Multi-GAN has the worst MRR value of 0.002928. The GAN model outperform the baseline model with significant improvement of 259% compared to CF model and 100% compared to CB model which prove the GAN has high degree od giving first revelant course in the ranked list of recommendations. While for MDGAN, it outperform one of the baseline model which is CF with 11.2%  of improvement. However, the MRR@5 of MDGAN model is still below than CB model.
 
 ### Normalized Discounted Cumulative Gain (NDCG)
 
-NDCG is used to evaluate the ranking quality of the recommendations. It takes into account not only the relevance of each recommended item but also the order in which they are presented, with more weight given to items at the top of the list. It’s a more comprehensive metric that considers both the relevance and the rank of each item.
-
+NDCG is used to evaluate the ranking quality of the recommendations. It takes into account not only the relevance of each recommended item but also the order in which they are presented, with more weight given to items at the top of the list. It’s a more comprehensive metric that considers both the relevance and the rank of each item. For NDCG@5, GAN again outperform all the models with the highest value of NDCG@5 which is 0.035822. while Multi-GAN shows the lowesr value of NDCG@5 which is 0.001171. GAN outperform the baseline model by 233% of imporvement compared to CF model and 125% compared to CB model. Meanwhile for MDGAN, it still outperform one of the baseline model which is CF model. The NDCG@5 value of MDGAN is still below the CB model.
 
 ### Overall
 
+Overall, the GAN model outperform all models in all performance metrics. It shows highest value of all performance metrics. This shows the GAN model has a great degree of ability to provide a better recommendations compared to the old technique of CF and CB. On the other hand, the Multi-GAN has shown the worst performance across all metrics, the worst performance is then followed by Multi-MDGAN. This indicates that the "Multi" framework of GAN is not suitable model in this task. The MDGAN model has shown some degree of ability in the recommendations task which this model outperform the CF model in all metrics. However, in comparison with CB, the MDGAN model manage to outperform the CB model only in the HR@5 metric. So it can be seen that MDGAN model have a great degree in recommending accurate course compared to baseline models as shown by HR@5 metrics. But overall performance of MDGAN is still below CB model and it still very far from the winner of this task, GAN model.
 
 # Data Product
 

@@ -86,6 +86,8 @@ Overall, the GAN model outperform all models in all performance metrics. It show
 
 # Data Product
 
+The data product was created by using third party tools which is Anvil to build a website based recommendation system. The recommendation engine includes all the models used in this study including generative models and baselines models. In this case, there are six different options of recommendation engine which are Generative Adversarial Networks, Multiple Generative Adversarial Networks, Multi-Discriminator Generative Adversarial Network, Multiple Multi-Discriminator Generative Adversarial Networks, Collaborative Filtering and Content-Based Filtering. The data product can be found in ["Educational Recommendation System Application"]().
+
 # Conclusion
 
 ## Revisiting the Objectives

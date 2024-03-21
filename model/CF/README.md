@@ -1,1 +1,5 @@
+# Collaborative Filtering (CF)
 
+# Data Preparation & Modelling
+
+The collaborative filtering takes only one data which which is user-video activity data. Due to huge amount of data, the sampling process was used to obtained 5000 interactions. Next, the data later was transformed into suitable form which consist only student ID course ID and Watching count. After that, the course ID was encoded by using label encoder. Subsequently, the encoded data was transformed into user-course interaction metrics. The K-nearest neighbour with cosine similarity metric and bruete algorithm was used. The model was trained in order to compute the cosine similarity of the course-user interaction metrics. The mentioned process is an input for K-nearest neighbor in the collaborative filtering. In order to test the collaborative filtering, the user entity data was used and processed in similar manner as in data preparation for Multi-GAN model. X component of test data was inputted to the model to be tested and the K-nearest neighbor will predict top five recommendation course.

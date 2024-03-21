@@ -1,3 +1,7 @@
+# Personalized Adaptive Learning using Generative Artificial Intelligence
+![](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/assets/69446089/b2c39836-cc9a-4656-9ae7-34516aae130d)
+
+
 # Background of the Study
 Education has traditionally been approached using a “one size fits all” system. This traditional system has been heavily criticised in recent years for being unable to address the demands of each individual student. However, due to lack of solution, the “one size fits all” education system is still being used nowadays even with advancement of technology. The global education systems are moving in the direction of a more individualized, student-centered strategy where traditional "one size fits all" approach has been moved to the Smart Learning Environment (SLE). SLE required modern technology such as Artificial Intelligence (AI), and multi-modal big data. These kind of technologies must be able to have several features including tracking the learning process, identifying learning scenarios, being aware of one’s surroundings, engaging with the learning community, and simple, active, and efficient learning. In this context, SLE can be achieved through personalized or adaptive learning to improving the current educational system.
 

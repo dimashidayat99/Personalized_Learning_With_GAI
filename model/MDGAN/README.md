@@ -25,20 +25,20 @@ The MDGAN architecture consist of generator component and multiple discriminator
 ## Generator
 The generator network consists of three layers which are one input layer, three hidden layers, and one output layer. 
 
-1. Input Layer: The input layer was created using a dense layer that consists of nine neurons representing nine features of input data of course sequences.
+1. Input Layer: The input layer was created using a dense layer that consists of 4302 neurons representing one hot features of nine course.
 
 2. Hidden Layers: The hidden layer was created by using a dense layer that consists of ten neurons with a linear activation layer. The first two hidden layers were connected to batch normalization to normalize the activations of the previous layer, which can help with training by reducing internal covariate shifts and improving gradient flow. Since the architecture of MDGAN is complex, only a small number of neurons was used to avoid high training time. 
 
-3. Output Layer: The output layer was created by using a dense layer with one neuron and softmax activation function.
+3. Output Layer: The output layer was created by using a dense layer with 478 neuron and softmax activation function.
 
 4. Model Complication: The generator model was compiled with loss function of mean absolute error and optimization with Adam optimizer. 
 
 ## Discriminators
 The MDGAN model in this study uses three discriminators. All three discriminators use the same neural network architecture. The discriminator architecture consists of four layers which are one input layer, two hidden layers, and one output layer. 
 
-1. Input Layer: The input layer was created by using a dense layer with ten neurons which represent the ten features of course sequences data.
+1. Input Layer: The input layer was created by using a dense layer with 4780 neurons which represent the one hot ten course features of course sequences data.
 
-2. Hidden Layers: Both hidden layers were created using a dense layer with 25 and 50 neurons for the first hidden layer and second hidden layer respectively. Both hidden layers use the ReLU activation function. The first dense layer was connected to the dropout layer which helps prevent overfitting by reducing co-adaptation of neurons. Each hidden layer is connected to batch normalization to normalize the activations of the previous layer, which can help with training by reducing internal covariate shifts and improving gradient flow.
+2. Hidden Layers: All hidden layers were created using a dense layer with 256, 128 and 128 neurons for the first, second and third hidden layer respectively. All hidden layers use the ReLU activation function. The first dense layer was connected to the dropout layer which helps prevent overfitting by reducing co-adaptation of neurons. Each hidden layer is connected to batch normalization to normalize the activations of the previous layer, which can help with training by reducing internal covariate shifts and improving gradient flow.
 
 3. Output Layer: The output layer was created using a dense layer that has one neuron with a sigmoid activation function. 
 
@@ -55,5 +55,5 @@ For discriminator two, the data was processed by two preprocessing layers for tr
 
 For discriminatory three, similar to discriminator two, the data was processed by two preprocessing layers for transferring the cumulative probability of courses to teachers and concatenating the X component of course-teacher sequence data with the processed generated data to form generated data in the form of course-teacher sequence. Similarly, the generated course-teacher sequence data becomes input along with actual course-teacher sequence data. 
 
-The output from discriminators was concatenated using the concatenate layer and it was connected to the final layer of the dense layer with one neuron of sigmoid activation function. The MDGAN was compiled by using the loss function of binary cross-entropy and Adam optimizer. The model was trained for 50 epochs. After training was completed, the X component test data was input into the MDGAN model to predict the final courses. The courses with the five highest probability scores were chosen. The Y component of the actual final course and the top five predicted courses were evaluated based on the performance metrics. The code of whole process can be found in the file of ["MDGAN_Educational_Recommendation_System"](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/code/MDGAN_Educational_Recommendation_System.ipynb) in the `code` [directory](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/code).
+The output from discriminators was concatenated using the concatenate layer and it was connected to the final layer of the dense layer with one neuron of sigmoid activation function. The MDGAN was compiled by using the loss function of binary cross-entropy and Adam optimizer. The model was trained for 100 epochs. After training was completed, the X component test data was input into the MDGAN model to predict the final courses. The courses with the five highest probability scores were chosen. The Y component of the actual final course and the top five predicted courses were evaluated based on the performance metrics. The code of whole process can be found in the file of ["MDGAN_Educational_Recommendation_System"](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/code/MDGAN_Educational_Recommendation_System.ipynb) in the `code` [directory](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/code).
 

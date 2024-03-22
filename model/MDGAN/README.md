@@ -47,7 +47,7 @@ optimizer.
 
 ## The MDGAN Model
 
-The generator component and three discriminator components were combined together forming Multiple Discriminators GAN (MDGAN). The output from the generator was combined with the X component of train data which requires a lambda layer to concatenate the data forming the generated course sequence. 
+The generator component and three discriminator components were combined forming Multiple Discriminators GAN (MDGAN). The output from the generator was combined with the X component of train data which requires a lambda layer to concatenate the data forming the generated course sequence. 
 
 The generated course sequence and actual course sequence become the input to discriminator one which discriminates the generated course sequence data with the actual course sequence data. The generated course sequence data require some preparation to become input for discriminators two and three. In this case, some preprocessing layers by using the lambda layer were developed to process the generated course sequence data. 
 

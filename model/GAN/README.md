@@ -1,5 +1,12 @@
 # Generative Adversarial Network (GAN)
 
+<p align="middle">
+<img src=https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/GAN/framework/GAN_framework.png>
+</p>
+<p align="middle">
+    <em>GAN Model Framework.</em>
+</p>
+
 # Data Preparation
 
 The GAN model takes only user entity data as input. To obtain the historical course sequences from the user entity, the data was prepared based on several steps namely data

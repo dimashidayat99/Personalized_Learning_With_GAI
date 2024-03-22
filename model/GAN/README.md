@@ -23,32 +23,32 @@ sampling, feature selection, data transformation, data encoding, and data splitt
 Overall, the final result of data preparation is one hot encoded course sequence data for ten-course sequences for X and Y components for training and testing data. Where the X component will have 5949 features and the Y component will have 661 features which represent one hot encoded data for nine course sequences and one hot encoded data for final courses respectively.
 
 # Modelling
-The conventional GAN model contains two main components which are the generator component and discriminator component. Each component will have different architectures of neural networks. 
+The conventional GAN model contains two main components which are the generator component and discriminator component. Each component have different architectures of neural networks. 
 
 ## Generator
 The generator component takes the X component of training data of historical course sequences as input. The generator component consists of four layers namely which are one input layer, two hidden layers, and one output layer (predictive layer).
   
-1. Input Layer: The neurons of the input layer will follow the input size of training data. In this case, the input layer will have 5949 neurons.
+1. Input Layer: The neurons of the input layer follow the input size of training data. Therefore, the input layer have 5949 neurons.
     
-2. Hidden Layers: Each hidden layers were created using a dense layer where the first hidden layer consists of 50 neurons and the second hidden layer consist of 25 neurons. Both hidden layers will use the Rectified Linear Unit (ReLU) as an activation function. The small number of neurons is selected to avoid the high training time of the model since there is a total of six models will be created.
+2. Hidden Layers: Each hidden layers were created using a dense layer where the first hidden layer consist of 50 neurons and the second hidden layer consist of 25 neurons. Both hidden layers used the Rectified Linear Unit (ReLU) as an activation function. The small number of neurons is selected to avoid the high training time of the model since there is a total of six models were created.
     
 3. Output Layer: The output layer was created using a dense layer that has 661 neurons with a softmax activation function. The softmax activation function will provide the output of the generator with a probability distribution over all courses.
   
-4. Model Complication: At this point, the generator output which is the predicted course can be seen as a probability distribution of courses. The generator model was compiled with Adam optimizer and the loss metric of mean absolute error.
+4. Model Complication: At this point, the generator output which is the predicted course can be seen as a probability distribution of courses. The generator model was compiled with Adam optimizer and the loss function fof categorical cross-entropy.
 
-The output from the generator was combined with the X component of training data of historical sequence forming generated course sequences. On the other hand, the X component of training data and the Y component of training data also will be combined forming the actual course sequences. Both generated course sequences and actual course sequences will become input in the discriminator component.
+The output from the generator was combined with the X component of training data of historical sequence forming generated course sequences. On the other hand, the X component of training data and the Y component of training data also will be combined forming the actual course sequences. Both generated course sequences and actual course sequences become the input in the discriminator component.
 
 ## Discriminator
 
 The discriminator network also consists of four layers which are one input layer, two hidden layers, and one output layer.
   
-1. Input Layer: The input layer will have 6610 neurons since the input of the discriminators is the complete course sequences from combined course sequences as mentioned before.
+1. Input Layer: The input layer have 6610 neurons since the input of the discriminators is the complete course sequences from combined X and Y component.
   
-2. Hidden Layers: The hidden layer was created based on the dense layer where the first hidden layer consists of 25 neurons and the second hidden layer consists of 50 neurons. Both hidden layers will use the ReLU activation function. A similar reason is used for having a small number of neurons which is to avoid high training time.
+2. Hidden Layers: The hidden layer was created based on the dense layer where the first hidden layer consists of 25 neurons and the second hidden layer consists of 50 neurons. Both hidden layers use the ReLU activation function. 
   
 3. Output Layer: The output layer was created using a dense layer that has one neuron with a sigmoid activation function. Using the sigmoid activation function, the output from the discriminator will return any floating-point number to predict the probability of binary variables which in this case, the binary variables are real or fake.
   
-4. Model Compilation: The discriminator model will be compiled with Adam optimizer, loss function of binary cross-entropy, and metrics of mean absolute error.
+4. Model Compilation: The discriminator model was compiled with Adam optimizer, loss function of binary cross-entropy, and metrics of accuracy.
 
 Both generated course sequences and actual course sequences become the input of the discriminator and the discriminator will discriminate whether the generated course sequences are real or fake.
 

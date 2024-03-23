@@ -29,7 +29,7 @@ Based on the formulated research questions, the study aims to:
 ## Research Design
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/research_design/research_design.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/research_design/research_design.png"  width="800" />
 </p>
 <p align="middle">
     <em>Research Design of the Study.</em>
@@ -48,7 +48,7 @@ The MOOCCube dataset come with sub data which later different model used differe
 ### GAN
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/GAN/framework/GAN_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/GAN/framework/GAN_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>GAN Framework.</em>
@@ -59,7 +59,7 @@ GAN is a type of neural network used for generative modeling. It consists of two
 ### Multi-GAN
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/Multi-GAN/framework/Multi-GAN_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/Multi-GAN/framework/Multi-GAN_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>Multi-GAN Framework.</em>
@@ -70,7 +70,7 @@ Similar with GAN, Multi-GAN use same principle as GAN. However, Multi-GAN use mu
 ### MDGAN
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/framework/MDGAN_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/MDGAN/framework/MDGAN_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>MDGAN Framework.</em>
@@ -81,7 +81,7 @@ MDGAN is a variation of the traditional GAN architecture that employs multiple d
 ### Multi-MDGAN
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/Multi-MDGAN/framework/Multi-MDGAN_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/Multi-MDGAN/framework/Multi-MDGAN_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>Multi-MDGAN Framework.</em>
@@ -92,7 +92,7 @@ Similar with MDGAN, Multi-MDGAN use same principle as MDGAN. However, Multi-MDGA
 ### CF
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/CF/framework/CF_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/CF/framework/CF_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>CF Framework.</em>
@@ -103,7 +103,7 @@ CF is a technique used in recommendation systems to predict a user's preferences
 ### CB
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/CB/framework/CB_framework.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/model/CB/framework/CB_framework.png"  width="800" />
 </p>
 <p align="middle">
     <em>CB Framework.</em>
@@ -118,7 +118,7 @@ The evaluation is a process to determine how well the model predicts the final c
 ### Mean Average Precision (MAP)
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/map.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/map.png"  width="800" />
 </p>
 <p align="middle">
     <em>MAP@5 Across Models.</em>
@@ -129,7 +129,7 @@ MAP is a metric thatt evaluates the quality of the recommendations. It measures 
 ### Hit Ratio (HR) 
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/hr.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/hr.png"  width="800" />
 </p>
 <p align="middle">
     <em>HR@5 Across Models.</em>
@@ -140,7 +140,7 @@ HR is used to evaluate the accuracy of the recommendations. Its measure correct 
 ### Mean Reciprocal Rank (MRR)
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/mrr.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/mrr.png"  width="800" />
 </p>
 <p align="middle">
     <em>MRR@5 Across Models.</em>
@@ -151,7 +151,7 @@ MRR is a metric used to evaluate the effectiveness of a recommendation system, p
 ### Normalized Discounted Cumulative Gain (NDCG)
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/ndcg.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/ndcg.png"  width="800" />
 </p>
 <p align="middle">
     <em>NDCG@5 Across Models.</em>
@@ -162,7 +162,7 @@ NDCG is used to evaluate the ranking quality of the recommendations. It takes in
 ### Overall
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/mrr.png"  width="300" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/mrr.png"  width="800" />
 </p>
 <p align="middle">
     <em>All Performance Metrics Across Models.</em>
@@ -174,11 +174,7 @@ Overall, the GAN model outperform all models in all performance metrics. It show
 
 The data product was created by using third party tools which is Anvil to build a website based recommendation system. The recommendation engine includes all the models used in this study including generative models and baseline models. In this case, there are six different options of recommendation engine which are Generative Adversarial Networks, Multiple Generative Adversarial Networks, Multi-Discriminators Generative Adversarial Network, Multiple Multi-Discriminators Generative Adversarial Networks, Collaborative Filtering and Content-Based Filtering. The data product can be found in ["Educational Recommendation System Application"](https://quarterly-naive-moth-course-recommender.anvil.app). Just in case the application give an error (high probably due to inactivity of notebooks), the overall of looks and functionals of the course recommendation can be seen in the demo video below:
 
-
-
 https://github.com/dimashidayat99/Personalized_Learning_With_GAI/assets/69446089/867bc11a-2809-4f2c-a50b-ff06aea65c9a
-
-
 
 # Conclusion
 

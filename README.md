@@ -162,7 +162,7 @@ NDCG is used to evaluate the ranking quality of the recommendations. It takes in
 ### Overall
 
 <p align="middle">
-<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/mrr.png"  width="800" />
+<img src="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/blob/main/evaluation/overall.png"  width="800" />
 </p>
 <p align="middle">
     <em>All Performance Metrics Across Models.</em>

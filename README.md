@@ -1,4 +1,5 @@
-# Personalized Adaptive Learning using Generative Artificial Intelligence
+# Personalized Learning with Generative Artificial Intelligence: Developing an Adaptive Learning System
+
 ![](https://github.com/dimashidayat99/Personalized_Learning_With_GAI/assets/69446089/b2c39836-cc9a-4656-9ae7-34516aae130d)
 
 
